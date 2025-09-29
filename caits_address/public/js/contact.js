@@ -13,7 +13,7 @@ frappe.ui.form.on('Contact', {
                         if (frm.doc.email_id && !frm.doc.user) {
                             frm.add_custom_button(__('Create User'), function () {
                                 frappe.call({
-                                    method: "iwapp_address.events.contact.create_user_from_contact",
+                                    method: "caits_address.events.contact.create_user_from_contact",
                                     args: {
                                         contact: frm.doc.name,
                                     },
@@ -48,7 +48,7 @@ frappe.ui.form.on('Contact', {
                                     primary_action(values) {
                                         if (values.customer)
                                             frappe.call({
-                                                method: "iwapp_address.events.contact.set_user_permission_from_contact",
+                                                method: "caits_address.events.contact.set_user_permission_from_contact",
                                                 args: {
                                                     customer: values.customer,
                                                     email: frm.doc.email_id
