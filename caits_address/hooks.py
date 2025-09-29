@@ -40,6 +40,7 @@ app_license = "mit"
 # webform_include_css = {"doctype": "public/css/doctype.css"}
 
 # include js in page
+doctype_js = {"Address" : "public/js/address.js", "Contact" : "public/js/contact.js"}
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
@@ -136,7 +137,15 @@ app_license = "mit"
 # Document Events
 # ---------------
 # Hook on document methods and events
-
+doc_events = {
+	"Address": {
+		"after_insert": "caits_address.events.address.after_insert",
+        # "before_save": "caits_address.events.address.before_save"
+	},
+    "Contact": {
+        "before_save": "caits_address.events.contact.before_save"
+	}
+}
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
@@ -242,3 +251,23 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [{
+    "dt":"Custom Field",
+    "filters": [
+        ["name", "in", (
+            "Address-custom_post_office", "Address-custom_taluk", "Address-custom_pincode_details",
+            "Address-custom_iwapp_pincode_details", "Address-custom_column_break_flglv",
+            "Address-custom_column_break_flglv", "Contact-custom_full_name"
+            )]
+    ]
+    },
+    {"dt":"Property Setter",
+        "filters": [
+            ["doc_type", "in", (
+                "Address",
+                "Customer",
+                "Supplier"
+            )]
+        ]
+    }
+]

@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-05 10:46:44.046646",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "post_office",
+  "taluk",
+  "division",
+  "column_break_nokim",
+  "district",
+  "state"
+ ],
+ "fields": [
+  {
+   "fieldname": "post_office",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Post Office"
+  },
+  {
+   "fieldname": "taluk",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Taluk"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Data",
+   "label": "Division"
+  },
+  {
+   "fieldname": "column_break_nokim",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "District"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-05 10:46:44.046646",
+ "modified_by": "Administrator",
+ "module": "Caits-Address",
+ "name": "Iwapp Pincode Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
