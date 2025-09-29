@@ -62,7 +62,7 @@ frappe.ui.form.on("Address", {
                     }
                     else {
                         frappe.call({
-                            method: 'iwapp_address.events.address.pincode',
+                            method: 'caits_address.events.address.pincode',
                             args: {
                                 pin: frm.doc.pincode
                             },
