@@ -1,6 +1,6 @@
 app_name = "caits_address"
-app_title = "caits_address"
-app_publisher = "Anther Technologies Pvt Ltd"
+app_title = "Caits-Address"
+app_publisher = "Anther Technologies"
 app_description = "Caits Address"
 app_email = "mail@anther.tech"
 app_license = "mit"
@@ -15,7 +15,7 @@ app_license = "mit"
 # 	{
 # 		"name": "caits_address",
 # 		"logo": "/assets/caits_address/logo.png",
-# 		"title": "caits_address",
+# 		"title": "Caits-Address",
 # 		"route": "/caits_address",
 # 		"has_permission": "caits_address.api.permission.has_app_permission"
 # 	}

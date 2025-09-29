@@ -1,7 +1,7 @@
 [project]
 name = "caits_address"
 authors = [
-    { name = "Anther Technologies Pvt Ltd", email = "mail@anther.tech"}
+    { name = "Anther Technologies", email = "mail@anther.tech"}
 ]
 description = "Caits Address"
 requires-python = ">=3.10"
